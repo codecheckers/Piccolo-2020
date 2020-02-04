@@ -7,7 +7,7 @@ output: html_document
 # Only need to run this if the packages have not been installed previously
 #install.packages("tidyverse")
 #install.packages("cowplot")
-setwd("~/Dropbox/ShinyLearner/Demo")
+#setwd("~/Dropbox/ShinyLearner/Demo")
 ```
 
 ```{r}
@@ -124,7 +124,7 @@ predictions_data <- suppressMessages(read_tsv("Results_Basic/diabetes/Prediction
 ```
 
 ```{r}
-optimized_predictions_data <- suppressMessages(read_tsv("Results_ParamsOptimized/diabetes/Nested_Predictions.tsv")) %>%
+optimized_predictions_data <- suppressMessages(read_tsv("Results_ParamsOptimized/diabetes/Nested_Predictions.tsv.gz")) %>%
   filter(Outer_Iteration==1 & Inner_Iteration == 1) %>%
   dplyr::select(-Outer_Iteration, -Inner_Iteration) %>%
   mutate(Params = paste0(basename(Algorithm))) %>%
