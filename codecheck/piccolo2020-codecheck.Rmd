@@ -31,7 +31,12 @@ get_outputs = function(dir) {
 The manuscript by Piccolo et al (2020) is in press at the journal
 *Gigascience*.  <https://www.biorxiv.org/content/10.1101/675181v1>
 
-
+## Summary of outputs generated
+```{r, echo=FALSE}
+outputs = get_outputs("outputs/")
+datatable(outputs, rownames=FALSE,
+		   escape=1, options=list(pageLength=25), caption = "Captured Outputs")
+```
 
 # CODECHECKER notes.
 
@@ -49,4 +54,15 @@ A few small edits were made to the `Analyze_Results.Rmd`, see history.
 To regenerate the Figures/ folder, we simply ran `make run` in the
 Makefile.
 
+Do we want to include `date.txt` and `uname.txt`?
 
+
+
+## Installation Notes
+
+To run this script, I needed to install the following R packages
+
+```{r eval=FALSE}
+install.packages("tidyverse")
+install.packages("cowplot")
+```
