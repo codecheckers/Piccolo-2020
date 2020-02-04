@@ -1,0 +1,191 @@
+Feature_Selection_Algorithm	Feature	Mean_Rank
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	BILIRUBIN	1.8
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	ASCITES	4.1
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	MALAISE	4.3
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	FATIGUE	5.3
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	SPIDERS	5.3
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	ALBUMIN	5.9
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	HISTOLOGY	6.0
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	VARICES	8.1
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	AGE	9.7
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	LIVER BIG	10.9
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	ANOREXIA	11.0
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	SEX	11.9
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	SPLEEN PALPABLE	12.9
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	STEROID	14.2
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	PROTIME	14.5
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	LIVER FIRM	15.0
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	ALK PHOSPHATE	15.3
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	ANTIVIRALS	16.3
+/AlgorithmScripts/FeatureSelection/arff/weka/Correlation/default	SGOT	17.6
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	ALBUMIN	2.1
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	ASCITES	3.0
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	BILIRUBIN	3.0
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	FATIGUE	5.3
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	VARICES	6.9
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	MALAISE	7.4
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	SPIDERS	8.5
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	HISTOLOGY	8.5
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	ALK PHOSPHATE	9.5
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	ANTIVIRALS	9.7
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	ANOREXIA	9.8
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	LIVER BIG	12.0
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	STEROID	13.4
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	SPLEEN PALPABLE	13.9
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	SEX	14.3
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	LIVER FIRM	14.7
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	SGOT	15.1
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	AGE	15.9
+/AlgorithmScripts/FeatureSelection/arff/weka/GainRatio/default	PROTIME	17.1
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	ANTIVIRALS	5.6
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	STEROID	6.0
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	FATIGUE	6.0
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	HISTOLOGY	6.3
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	MALAISE	7.5
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	LIVER BIG	8.6
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	ALBUMIN	8.8
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	ASCITES	8.9
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	BILIRUBIN	9.0
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	SEX	9.4
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	ALK PHOSPHATE	10.0
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	LIVER FIRM	10.7
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	ANOREXIA	10.8
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	VARICES	11.5
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	SGOT	13.0
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	SPLEEN PALPABLE	13.9
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	PROTIME	14.2
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	SPIDERS	14.5
+/AlgorithmScripts/FeatureSelection/arff/weka/OneR/default	AGE	15.4
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	MALAISE	2.6
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	HISTOLOGY	2.7
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	BILIRUBIN	3.5
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	SPIDERS	4.5
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	ASCITES	5.8
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	FATIGUE	6.3
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	ALBUMIN	6.5
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	ANOREXIA	8.9
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	VARICES	9.4
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	LIVER FIRM	10.9
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	STEROID	11.1
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	SPLEEN PALPABLE	11.3
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	PROTIME	12.7
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	ANTIVIRALS	13.7
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	LIVER BIG	14.3
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	ALK PHOSPHATE	15.5
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	SGOT	15.9
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	AGE	16.0
+/AlgorithmScripts/FeatureSelection/arff/weka/ReliefF/default	SEX	18.5
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	ALBUMIN	2.0
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	BILIRUBIN	2.5
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	ASCITES	3.6
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	FATIGUE	5.1
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	MALAISE	6.9
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	VARICES	7.4
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	SPIDERS	8.0
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	HISTOLOGY	8.1
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	ANOREXIA	9.5
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	ALK PHOSPHATE	9.7
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	ANTIVIRALS	9.9
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	LIVER BIG	12.1
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	STEROID	13.3
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	SPLEEN PALPABLE	14.0
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	LIVER FIRM	14.3
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	SEX	14.7
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	SGOT	15.1
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	AGE	15.9
+/AlgorithmScripts/FeatureSelection/arff/weka/SymmetricalUncertainty/default	PROTIME	17.7
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	BILIRUBIN	2.5
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	ASCITES	3.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	SPIDERS	4.1
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	MALAISE	4.3
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	ALBUMIN	5.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	FATIGUE	5.8
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	HISTOLOGY	6.3
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	VARICES	7.8
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	AGE	8.7
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	ANOREXIA	10.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	LIVER BIG	11.0
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	SEX	12.1
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	SPLEEN PALPABLE	12.6
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	STEROID	14.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	LIVER FIRM	15.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	ANTIVIRALS	15.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	PROTIME	16.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	ALK PHOSPHATE	16.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/kruskal.test/default	SGOT	17.1
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	ALBUMIN	3.3
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	BILIRUBIN	5.4
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	ASCITES	5.5
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	SPIDERS	7.8
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	MALAISE	9.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	FATIGUE	9.4
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	SEX	9.7
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	LIVER FIRM	9.7
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	HISTOLOGY	9.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	LIVER BIG	10.3
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	PROTIME	10.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	AGE	11.6
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	VARICES	11.6
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	ANTIVIRALS	11.7
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	ANOREXIA	11.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	ALK PHOSPHATE	11.9
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	STEROID	13.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	SGOT	13.2
+/AlgorithmScripts/FeatureSelection/tsv/mlr/randomForestSRC.rfsrc/default	SPLEEN PALPABLE	13.9
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	ALBUMIN	4.0
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	PROTIME	4.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	BILIRUBIN	6.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	ASCITES	6.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	FATIGUE	6.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	SPIDERS	6.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	MALAISE	7.4
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	AGE	8.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	HISTOLOGY	8.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	VARICES	10.8
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	SPLEEN PALPABLE	11.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	SEX	12.0
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	SGOT	12.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	ALK PHOSPHATE	13.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	LIVER BIG	13.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	ANOREXIA	13.4
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	STEROID	14.8
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	LIVER FIRM	14.9
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/mutual_info/default	ANTIVIRALS	15.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	BILIRUBIN	1.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	ALBUMIN	1.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	SGOT	3.9
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	AGE	4.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	ALK PHOSPHATE	6.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	PROTIME	6.9
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	ASCITES	7.2
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	SPIDERS	8.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	VARICES	9.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	MALAISE	10.2
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	LIVER FIRM	10.4
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	LIVER BIG	12.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	HISTOLOGY	12.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	SPLEEN PALPABLE	13.0
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	ANOREXIA	14.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	FATIGUE	15.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	STEROID	15.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	ANTIVIRALS	18.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/random_forest_rfe/default	SEX	18.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	BILIRUBIN	6.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	LIVER BIG	6.9
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	SEX	7.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	ASCITES	8.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	MALAISE	8.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	LIVER FIRM	8.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	VARICES	9.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	FATIGUE	9.2
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	AGE	10.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	SPLEEN PALPABLE	10.2
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	ANOREXIA	10.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	SPIDERS	10.6
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	ALBUMIN	11.1
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	PROTIME	11.3
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	HISTOLOGY	11.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	ANTIVIRALS	11.8
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	STEROID	12.5
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	ALK PHOSPHATE	12.7
+/AlgorithmScripts/FeatureSelection/tsv/sklearn/svm_rfe/default	SGOT	13.3
