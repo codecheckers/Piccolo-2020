@@ -1,0 +1,27 @@
+# MANIFEST for codecheck
+# 2020-02-05 Stephen Eglen
+# Filenames are relative to the root of the project.
+
+- file: Figures/Datasets_Basic_AUROC.pdf
+  comment: Figure 2
+
+- file: Figures/Predictions_Histograms.pdf
+  comment: Figure 3
+
+- file: Figures/Algorithms_ParamsImprovement_AUROC.pdf
+  comment: Figure 4
+
+- file: Figures/Algorithms_FSImprovement_AUROC.pdf
+  comment: Figure 5
+
+- file: Figures/FS_vs_CL.pdf
+  comment: Figure 6
+
+- file: Figures/FS_NumFeatures.pdf
+  comment: Figure 7
+
+- file: Tables/Basic_DiffFromMedian.tsv
+  comment: Table 1
+
+- file: Tables/ParamOpt_Improvement.tsv
+  comment: Table 2
