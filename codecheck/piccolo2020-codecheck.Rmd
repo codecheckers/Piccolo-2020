@@ -6,6 +6,8 @@ output:
   pdf_document:
     toc: true
     highlight: zenburn
+    includes:
+       in_header: preamble.sty
   html_document:
     self_contained: false
     toc: true
