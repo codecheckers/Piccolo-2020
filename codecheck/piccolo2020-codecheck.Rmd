@@ -3,6 +3,9 @@ title: "CODECHECK: Piccolo2020"
 author: "Stephen J Eglen"
 date: "`r Sys.Date()`"
 output:
+  pdf_document:
+    toc: true
+    highlight: zenburn
   html_document:
     self_contained: false
     toc: true
@@ -12,14 +15,38 @@ output:
 ```{r rsetup-knitr,eval=TRUE,include=FALSE}
 require(knitr)
 require(DT)
+require(yaml)
 options(width=60)
 opts_chunk$set(cache=FALSE)
 
-get_outputs = function(dir) {
-  files = list.files(dir)
-  sizes = sapply(files, function(f) file.size(sprintf("%s%s", dir, f)))
-  url=sprintf('<a href="%s%s">%s</a>', dir, files, files)
-  table = cbind(files, sizes, url)
+root_project = "../" #root of directory relative to this file.
+dest_dir = "outputs/"
+
+outputs_manifest = paste0(root_project, "codecheck-manifest.yml")
+
+
+outputs_manifest = read_yaml(outputs_manifest)
+
+## Create the outputs directory if missing
+if ( !dir.exists(dest_dir) ) {
+  dir.create(dest_dir)
+}
+
+## Copy each file mentioned in the manifest into DEST_DIR
+dest_files = sapply(outputs_manifest, function(x) {
+  src_file  = paste0(root_project, x$file)
+  dest_file  = paste0(dest_dir,    basename(x$file))
+  file.copy(src_file, dest_file)
+  dest_file
+})
+  
+get_outputs = function(outputs_manifest) {
+  files = sapply(outputs_manifest, function(x) x$file)
+  comments = sapply(outputs_manifest, function(x) x$comment)
+  ##sizes = sapply(files, function(f) file.size(sprintf("%s%s", dir, f)))
+  sizes = file.size(dest_files)
+  url=sprintf('<a href="%s">%s</a>', dest_files, files)
+  table = cbind(files, comments, sizes, url)
   table
 }
 ```
@@ -28,41 +55,87 @@ get_outputs = function(dir) {
 
 # Piccolo2020
 
-The manuscript by Piccolo et al (2020) is in press at the journal
-*Gigascience*.  <https://www.biorxiv.org/content/10.1101/675181v1>
+
+The paper checked was the second revision of the manuscript by Piccolo
+et al (2020), now in press at the journal *Gigascience*.  A preprint
+of the initial submission is available at:
+<https://www.biorxiv.org/content/10.1101/675181v1>
+
+**Scott: would it be possible sometimes to archive the version of the
+paper that was code-checked?**
+
+
+The main repository of the paper contained code to apply machine
+learning techniques to datasets; this code would take hours-days to
+run, and so for now has not been re-run.  The code that has been
+checked is the code that takes the intermediate outputs from the
+machine learning and visualises those results.  **This codecheck does
+not (yet) re-run the entire pipeline.**
+
 
 ## Summary of outputs generated
 ```{r, echo=FALSE}
-outputs = get_outputs("outputs/")
+outputs = get_outputs(outputs_manifest)
 datatable(outputs, rownames=FALSE,
 		   escape=1, options=list(pageLength=25), caption = "Captured Outputs")
 ```
 
 # CODECHECKER notes.
 
-The main Rmd and helper script were downloaded from
-<https://github.com/srp33/ShinyLearner/>. 
 
-The data files were downloaded direct from the CODEOCEAN capsule.  One
-of the data files
+### Data and Code
+
+After creating an empty repository, the following data and results
+folders were copied from CODE OCEAN capsule for the paper: `Datasets`,
+`Results_Basic`, `Results_FeatureSelection` and
+`Results_ParamsOptimized`.  One of the data files
 `Results_ParamsOptimized/diabetes/Nested_Predictions.tsv.gz` needed to
 be compressed to reduce the file size from 160 Mb to 9 Mb (Github has
 limit on individual files of 100 Mb.)
 
-A few small edits were made to the `Analyze_Results.Rmd`, see history.
 
-To regenerate the Figures/ folder, we simply ran `make run` in the
-Makefile.
+The main Rmd and helper script were downloaded from
+<https://github.com/srp33/ShinyLearner/>.  The Rmd file was edited to
+read the compressed version of the .tsv file.
 
-Do we want to include `date.txt` and `uname.txt`?
+### Extra software installations
 
 
-
-## Installation Notes
 
 To run this script, I needed to install the following R packages
 
 ```{r eval=FALSE}
 install.packages("tidyverse")
 install.packages("cowplot")
+```
+
+### Running the software to regenerate outputs.
+
+A few small edits were made to the `Analyze_Results.Rmd`, see the git
+history,
+
+To regenerate the Figures/ folder, we simply ran `make run` in the
+Makefile, created by SJE.
+
+
+\clearpage
+
+# Outputs
+
+(Ignoring two tsv files for now.  This could also be looped I would
+imagine.  Perhaps yml should note which files should be shown in the certificate?)
+
+```{r pressure, echo=FALSE, fig.cap=outputs[1:6,"comments"]}
+knitr::include_graphics(dest_files[1])
+cat('\n\n')
+knitr::include_graphics(dest_files[2])
+cat('\n\n')
+knitr::include_graphics(dest_files[3])
+cat('\n\n')
+knitr::include_graphics(dest_files[4])
+cat('\n\n')
+knitr::include_graphics(dest_files[5])
+cat('\n\n')
+knitr::include_graphics(dest_files[6])
+cat('\n\n')
 ```
