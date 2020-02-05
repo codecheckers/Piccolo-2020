@@ -6,6 +6,9 @@
 piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd
 	Rscript -e 'rmarkdown::render("$<")'
 
+readme.pdf: piccolo2020-codecheck.Rmd
+	Rscript -e 'rmarkdown::render("$<", "pdf_document")'
+	cp piccolo2020-codecheck.pdf readme.pdf
 
 .PHONY: run clean
 
