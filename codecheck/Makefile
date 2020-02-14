@@ -3,12 +3,15 @@
 ## make outputs
 ## make 
 
-piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd
+
+all: codecheck.pdf
+
+piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd summary_table.tex
 	Rscript -e 'rmarkdown::render("$<")'
 
-readme.pdf: piccolo2020-codecheck.Rmd
+codecheck.pdf: piccolo2020-codecheck.Rmd summary_table.tex preamble.sty
 	Rscript -e 'rmarkdown::render("$<", "pdf_document")'
-	cp piccolo2020-codecheck.pdf readme.pdf
+	cp piccolo2020-codecheck.pdf codecheck.pdf
 
 .PHONY: run clean
 
