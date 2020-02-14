@@ -1,39 +1,33 @@
-%YAML 1.2
----
 version: https://codecheck.org.uk/spec/1.0
 
 manifest:
   - file: Figures/Datasets_Basic_AUROC.pdf
-  comment: Figure 2 of manuscript
+    comment: Figure 2 of manuscript
 
   - file: Figures/Predictions_Histograms.pdf
-  comment: Figure 3 of manuscript
+    comment: Figure 3 of manuscript
 
   - file: Figures/Algorithms_ParamsImprovement_AUROC.pdf
-  comment: Figure 4 of manuscript
+    comment: Figure 4 of manuscript
 
   - file: Figures/Algorithms_FSImprovement_AUROC.pdf
-  comment: Figure 5 of manuscript
+    comment: Figure 5 of manuscript
 
   - file: Figures/FS_vs_CL.pdf
-  comment: Figure 6 of manuscript
+    comment: Figure 6 of manuscript
 
   - file: Figures/FS_NumFeatures.pdf
-  comment: Figure 7 of manuscript
+    comment: Figure 7 of manuscript
 
   - file: Tables/Basic_DiffFromMedian.tsv
-  comment: Example output table 1 (not in manuscript)
+    comment: Example output table 1 (not in manuscript)
 
   - file: Tables/ParamOpt_Improvement.tsv
-  comment: Example output table 2 (not in manuscript)
+    comment: Example output table 2 (not in manuscript)
 
 
 codechecker:
-  notes: |
-    The check was straightforward as all material was provided in an
-  Rmd.  Only visualiation steps performed, rather than machine learning (which could take several hours/days).
-    
-  The created figures seem to match the ones provided in the article. The content of other output files was not checked.
+  summary:  Only visualiation steps performed, rather than machine learning (which could take several hours/days).  The created figures seem to match the ones provided in the article. The content of other output files was not checked.
   repository: https://github.com/codecheckers/Piccolo-2020
   check_time: "2019-02-14 10:00:00"
   
