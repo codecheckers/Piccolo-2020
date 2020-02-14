@@ -1,9 +1,8 @@
 ---
-title: CODECHECK certificate
+title: CODECHECK certificate 2020-001
 output:
   pdf_document:
     toc: false
-    highlight: zenburn
     includes:
        in_header: preamble.sty
   html_document:
@@ -11,6 +10,11 @@ output:
     toc: true
     toc_float: false
 ---
+
+
+\centerline{\includegraphics[width=4cm]{codecheck_logo.pdf}}
+
+\vspace*{2cm}
 
 ```{r rsetup-knitr,eval=TRUE,include=FALSE}
 require(knitr)
@@ -56,38 +60,58 @@ get_outputs = function(outputs_manifest) {
 }
 ```
 
-
-## CODECHECK Summary
-
-\input{summary_table.tex}
+```{r,include=FALSE}
+## Temporary hack to make URL
+url_it = function(url) {
+  url = sub("<", "\\\\url{", url)
+  url = sub(">", "}", url)
+  url
+}
+```
 
 ```{r,include=FALSE}
 df = matrix(NA, nrow=0,ncol=2)
 df =rbind(df, c("Title",    yaml_data$paper$title))
 df =rbind(df, c("Authors",  yaml_data$paper$authors))
 df =rbind(df, c("Reference",  yaml_data$paper$reference))
-df =rbind(df, c("Date of check:",  yaml_data$codechecker$check_time))
-df =rbind(df, c("Date of check:",  yaml_data$codechecker$check_time))
-df =rbind(df, c("Repository:",  yaml_data$codechecker$repository))
+df =rbind(df, c("Codechecker", url_it(yaml_data$codecheck$codechecker)))
+df =rbind(df, c("Date of check:",  yaml_data$codecheck$check_time))
+df =rbind(df, c("Date of check:",  yaml_data$codecheck$check_time))
+df =rbind(df, c("Repository:",  url_it(yaml_data$codecheck$repository)))
 colnames(df) = c("Item", "Value")
 ```
 
 
 ```{r,echo=FALSE,results='asis'}
 ##kable(df, booktabs=FALSE, align=c('l', 'p{12cm}'), caption="CODECHECK Summary")
-print(xtable(df, align=c('l', 'l', 'p{10cm}'), caption='CODECHECK summary'), include.rownames=FALSE, include.colnames=TRUE)
+print(xtable(df, align=c('l', 'l', 'p{10cm}'),
+             caption='CODECHECK summary'),
+      include.rownames=FALSE,
+      include.colnames=TRUE,
+      sanitize.text.function = function(x){x},
+      comment=FALSE)
 ```
 
 
 
 
-## Summary of outputs generated
-```{r, echo=FALSE}
+```{r, echo=FALSE,results='asis'}
 outputs = get_outputs(outputs_manifest)
-##datatable(outputs, rownames=FALSE,
-##		   escape=1, options=list(pageLength=25), caption = "Captured Outputs")
-kable(outputs[,1:3])
+xt = xtable(outputs[,1:3], caption="Summary of output files generated")
+colnames(xt) = c("File", "Comment", "Size")
+print(xt,
+      include.rownames=FALSE,
+      comment=FALSE)
 ```
+
+
+# Summary
+
+The reproduction of the figures in the manuscript was straightforward
+given that the authors provided a Rmarkdown document that processed
+the results data files.  The results data files were not independently
+reproduced at this stage because of the long compute time.
+
 
 
 \clearpage
@@ -98,7 +122,7 @@ kable(outputs[,1:3])
 ### Data and Code
 
 After creating an empty repository, the following data and results
-folders were copied from CODE OCEAN capsule for the paper: `Datasets`,
+folders were copied from CODE OCEAN capsule (<https://codeocean.com/capsule/5449763/tree>) for the paper: `Datasets`,
 `Results_Basic`, `Results_FeatureSelection` and
 `Results_ParamsOptimized`.  One of the data files
 `Results_ParamsOptimized/diabetes/Nested_Predictions.tsv.gz` needed to
