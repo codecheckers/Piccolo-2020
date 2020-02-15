@@ -19,7 +19,6 @@ output:
 ```{r rsetup-knitr,eval=TRUE,include=FALSE}
 require(knitr)
 require(xtable)
-require(DT)
 require(yaml)
 require(tibble)
 require(readr)
