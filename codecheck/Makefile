@@ -6,10 +6,10 @@
 
 all: codecheck.pdf
 
-piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd summary_table.tex
+piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd
 	Rscript -e 'rmarkdown::render("$<")'
 
-codecheck.pdf: piccolo2020-codecheck.Rmd summary_table.tex preamble.sty
+codecheck.pdf: piccolo2020-codecheck.Rmd preamble.sty
 	Rscript -e 'rmarkdown::render("$<", "pdf_document")'
 	cp piccolo2020-codecheck.pdf codecheck.pdf
 
