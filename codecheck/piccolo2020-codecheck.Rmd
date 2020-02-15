@@ -33,7 +33,6 @@ dest_dir = "outputs/"
 
 yaml_data = read_yaml( file.path(root_project, yml_file) )
 
-
 outputs_manifest = yaml_data$manifest
 
 ## Create the outputs directory if missing
@@ -52,7 +51,6 @@ dest_files = sapply(outputs_manifest, function(x) {
 get_outputs = function(outputs_manifest) {
   files = sapply(outputs_manifest, function(x) x$file)
   comments = sapply(outputs_manifest, function(x) x$comment)
-  ##sizes = sapply(files, function(f) file.size(sprintf("%s%s", dir, f)))
   sizes = file.size(dest_files)
   url=sprintf('<a href="%s">%s</a>', dest_files, files)
   table = cbind(files, comments, sizes, url)
@@ -70,21 +68,22 @@ url_it = function(url) {
 ```
 
 ```{r,include=FALSE}
-df = matrix(NA, nrow=0,ncol=2)
-df =rbind(df, c("Title",    yaml_data$paper$title))
-df =rbind(df, c("Authors",  yaml_data$paper$authors))
-df =rbind(df, c("Reference",  yaml_data$paper$reference))
-df =rbind(df, c("Codechecker", url_it(yaml_data$codecheck$codechecker)))
-df =rbind(df, c("Date of check:",  yaml_data$codecheck$check_time))
-df =rbind(df, c("Summary:",  yaml_data$codecheck$summary))
-df =rbind(df, c("Repository:",  url_it(yaml_data$codecheck$repository)))
-colnames(df) = c("Item", "Value")
+summary_entries = list(
+  "Title" =            yaml_data$paper$title,
+  "Authors" =          yaml_data$paper$authors,
+  "Reference" =        yaml_data$paper$reference,
+  "Codechecker" =      url_it(yaml_data$codecheck$codechecker),
+  "Date of check:" =   yaml_data$codecheck$check_time,
+  "Summary:" =         yaml_data$codecheck$summary,
+  "Repository:" =      url_it(yaml_data$codecheck$repository))
+summary_df = data.frame(Item=names(summary_entries),
+                Value=unlist(summary_entries, use.names=FALSE))
 ```
 
 
 ```{r,echo=FALSE,results='asis'}
 ##kable(df, booktabs=FALSE, align=c('l', 'p{12cm}'), caption="CODECHECK Summary")
-print(xtable(df, align=c('l', 'l', 'p{10cm}'),
+print(xtable(summary_df, align=c('l', 'l', 'p{10cm}'),
              caption='CODECHECK summary'),
       include.rownames=FALSE,
       include.colnames=TRUE,
@@ -210,4 +209,5 @@ sessionInfo()
 
 
 <!-- 
-  rmarkdown::render("piccolo2020-codecheck.Rmd", output_format="pdf_document") -->
+  rmarkdown::render("piccolo2020-codecheck.Rmd", output_format="pdf_document") 
+  -->
