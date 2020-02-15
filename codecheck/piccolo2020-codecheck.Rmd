@@ -76,7 +76,7 @@ df =rbind(df, c("Authors",  yaml_data$paper$authors))
 df =rbind(df, c("Reference",  yaml_data$paper$reference))
 df =rbind(df, c("Codechecker", url_it(yaml_data$codecheck$codechecker)))
 df =rbind(df, c("Date of check:",  yaml_data$codecheck$check_time))
-df =rbind(df, c("Date of check:",  yaml_data$codecheck$check_time))
+df =rbind(df, c("Summary:",  yaml_data$codecheck$summary))
 df =rbind(df, c("Repository:",  url_it(yaml_data$codecheck$repository)))
 colnames(df) = c("Item", "Value")
 ```
