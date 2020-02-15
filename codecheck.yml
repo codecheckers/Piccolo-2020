@@ -34,7 +34,7 @@ manifest:
 
 codecheck:
   codechecker: Stephen J. Eglen <https://orcid.org/0000-0001-8607-8025>
-  summary:  Only visualiation steps performed, rather than machine learning (which could take several hours/days).  The created figures seem to match the ones provided in the article. The content of other output files was not checked.
+  summary:  Only visualiation steps performed, rather than machine learning (which could take several hours/days).  The created figures match those in the article. The content of other output files was not checked.
   repository: <https://github.com/codecheckers/Piccolo-2020>
   check_time: "2019-02-14 10:00:00"
   
