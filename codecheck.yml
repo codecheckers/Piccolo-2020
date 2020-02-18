@@ -37,4 +37,6 @@ codecheck:
   summary:  Only visualiation steps performed, rather than machine learning (which could take several hours/days).  The created figures match those in the article. The content of other output files was not checked.
   repository: <https://github.com/codecheckers/Piccolo-2020>
   check_time: "2019-02-14 10:00:00"
-  
+  certificate: 2020-001
+  doi: <http://doi.org/10.5281/zenodo.3674056>
+
