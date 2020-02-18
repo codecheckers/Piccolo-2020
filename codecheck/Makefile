@@ -6,12 +6,13 @@
 
 all: codecheck.pdf
 
-piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd
-	Rscript -e 'rmarkdown::render("$<")'
 
-codecheck.pdf: piccolo2020-codecheck.Rmd preamble.sty
+codecheck.pdf: piccolo2020-codecheck.Rmd preamble.sty ../codecheck.yml
 	Rscript -e 'rmarkdown::render("$<", "pdf_document")'
 	cp piccolo2020-codecheck.pdf codecheck.pdf
+
+piccolo2020-codecheck.html: piccolo2020-codecheck.Rmd ../codecheck.yml
+	Rscript -e 'rmarkdown::render("$<")'
 
 .PHONY: run clean
 
