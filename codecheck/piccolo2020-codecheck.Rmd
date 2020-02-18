@@ -1,5 +1,4 @@
 ---
-title: CODECHECK certificate 2020-001
 output:
   pdf_document:
     toc: false
@@ -79,6 +78,7 @@ dest_files = copy_files_to_dest_dir(root_project, manifest,
                                     
 ```
 
+
 ```{r,include=FALSE}
 ## Temporary hack to make URL
 url_it = function(url) {
@@ -87,6 +87,11 @@ url_it = function(url) {
   url
 }
 ```
+
+---
+title: `r paste("CODECHECK certificate", yaml_data$codecheck$certificate)`
+subtitle: `r url_it(yaml_data$codecheck$doi)`
+---
 
 ```{r,include=FALSE}
 summary_entries = list(
