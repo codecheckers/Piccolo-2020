@@ -10,5 +10,6 @@
 
 [CODECHECK certificate](http://dx.doi.org/10.5281/zenodo.3674056)
 
-[Blog piece](http://gigasciencejournal.com/blog/codecheck-certificate/)
+[Blog piece part 1](http://gigasciencejournal.com/blog/codecheck-certificate/)  and
+[part 2](http://gigasciencejournal.com/blog/shinylearner-codecheck/)
 describing an overview of CODECHECK.
