@@ -7,7 +7,7 @@ paper:
     - name: Erica Suh
     - name: Kimball Hill
     - name: Stephen R Piccolo    
-  reference: Paper to appear in Gigascience.
+  reference: https://doi.org/10.1093/gigascience/giaa026
 
 manifest:
   - file: Figures/Datasets_Basic_AUROC.pdf
